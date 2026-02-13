@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "./Login.css";
 
 export default function Login() {
@@ -36,7 +36,18 @@ export default function Login() {
       return;
     }
 
+    // Simpan ke localStorage
+    localStorage.setItem("user", JSON.stringify(form));
+
     navigate("/dashboard");
+
+    // auto login kalau data sudah ada di localstorage
+  useEffect(() => {
+    const savedUser = localStorage.getItem("user");
+    if (savedUser) {
+      navigate("/dashboard");
+    }
+  }, [navigate]);
   };
 
   return (
