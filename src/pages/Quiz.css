@@ -1,0 +1,126 @@
+/* quiz card - digunakan mulai dashboard kategori */
+.quiz-card {
+  background: white;
+  padding: 35px;
+  width: 550px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primary-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e73df;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.primary-btn:hover {
+  background-color: #2e59d9;
+}
+
+/* header - timer & total soal dan soal yang sudah dikerjakan */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+
+.timer {
+  background: #ffe8cc;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/*soal */
+
+.question {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* pilihan jawaban */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f8f9fc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.option-btn:hover {
+  background: #4e73df;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* result */
+
+.result-card {
+  text-align: center;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #4e73df;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(78, 115, 223, 0.3);
+}
+
+.result-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.result-buttons button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.result-buttons button:first-child {
+  background: #4e73df;
+  color: white;
+}
+
+.logout-btn {
+  background: #e74a3b;
+  color: white;
+}
+
+.result-buttons button:hover {
+  opacity: 0.85;
+}
